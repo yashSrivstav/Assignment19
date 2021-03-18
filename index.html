@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 19</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+
+    .nav {
+        height: 45px;
+        background-color: white;
+        box-shadow: 5px 2px lightgrey;
+        margin-bottom: 20px;
+    }
+
+    ol {
+        display: flex;
+        margin-left: 75%;
+    }
+
+    i {
+        margin-right: 20px;
+        color: grey;
+    }
+
+    li {
+        list-style: none;
+        margin-top: 12px;
+    }
+
+    .navbar {
+        background-color: white;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        color: black;
+        font-weight: 600;
+    }
+
+    .navbar .navbar-nav .nav-link:hover {
+        color: white;
+        background-color: #3fba36;
+        box-shadow: 0px 2px grey;
+    }
+
+    .logo {
+        width: 10%;
+    }
+
+    .background {
+        width: 100%;
+        padding: 40px;
+        position: relative;
+    }
+
+    .text {
+        position: absolute;
+        top: 300px;
+        left: 300px;
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 20px;
+        border-left: 1mm ridge#3fba36;
+    }
+
+    .image {
+        width: 100%;
+        padding: 40px;
+    }
+
+    .banner {
+        position: relative;
+    }
+
+    button {
+        padding: 10px;
+        color: white;
+        background-color: #3fba36;
+    }
+
+    h2 {
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+
+    .ptext {
+        color: white;
+        margin-bottom: 40px;
+    }
+</style>
+
+<body>
+    <div class="nav">
+        <ol>
+            <li><i class="fa fa-facebook-f"></i></li>
+            <li><i class="fa fa-twitter"></i></li>
+            <li><i class="fa fa-instagram"></i></li>
+        </ol>
+    </div>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <img class="logo" src="./logo.png" alt="logo">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nvbCollapse"
+                    aria-controls="nvbCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="nvbCollapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item pl-1">
+                            <a class="nav-link" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item active pl-1">
+                            <a class="nav-link" href="#">PAGES <i class="fa fa-caret-down"></i></a>
+                        </li>
+                        <li class="nav-item pl-1">
+                            <a class="nav-link" href="#">MEGA MENU <i class="fa fa-caret-down"></i></a>
+                        </li>
+                        <li class="nav-item pl-1">
+                            <a class="nav-link" href="#">RECEIPIES</a>
+                        </li>
+                        <li class="nav-item pl-1">
+                            <a class="nav-link" href="#">4 VEGANS</a>
+                        </li>
+                        <li class="nav-item pl-1">
+                            <a class="nav-link" href="#">CONTACT</a>
+                        </li>
+                        <li class="nav-item pl-1">
+                            <a class="nav-link" href="#"><i class="fa fa-search"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="banner">
+        <img src="./background.jpg" alt="banner" class="image">
+        <div class="text">
+            <h2 style="color: white;">Delicious Homemade Burger</h2>
+            <p class="ptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident <br> eaque ipsum vitae!
+                Ea
+                repellendus id
+                nostrum error,! <br>eaque ipsum vitae!
+                Ea
+                repellendus id
+                nostrum error,!</p>
+            <button>See Receipe</button>
+        </div>
+    </div>
+</body>
+
+</html>
